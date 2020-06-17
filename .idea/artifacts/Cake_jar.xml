@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Cake:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Cake_jar</output-path>
+    <root id="archive" name="Cake.jar">
+      <element id="module-output" name="Cake" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/guice-4.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javax.inject-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/aopalliance-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/guava-27.1-jre.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/failureaccess-1.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jsr305-3.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/checker-qual-2.5.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/error_prone_annotations-2.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/j2objc-annotations-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/animal-sniffer-annotations-1.17.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
