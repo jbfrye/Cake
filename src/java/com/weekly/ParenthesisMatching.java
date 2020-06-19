@@ -16,7 +16,7 @@ public class ParenthesisMatching implements Problem {
     runSolution();
   }
 
-  /** Self contained problem solution */
+  /** Problem solution. */
   private void runSolution() {
     int openParens = 1;
     for (int i = ++position; i < sentence.length(); i++) {
@@ -26,7 +26,7 @@ public class ParenthesisMatching implements Problem {
         openParens--;
       }
       if (openParens == 0) {
-        out.print(i);
+        out.print("Location of '(':\n" + i);
         break;
       }
     }
@@ -41,6 +41,7 @@ public class ParenthesisMatching implements Problem {
     int loopCounter = 0;
     boolean isValid;
 
+    out.println("====Problem #300: Parenthesis Matching====");
     out.println("Enter a sentence with a valid parenthesis configuration:");
     do {
       sentence = scanner.nextLine();

@@ -7,7 +7,11 @@ import java.lang.reflect.InvocationTargetException;
 
 public class Cake {
   public static void main(String[] args) {
-    execute(ParenthesisMatching.class);
+    // #299: Permutation Palindrome
+    execute(PermutationPalindrome.class);
+
+    // #300: Parenthesis Matching
+    //execute(ParenthesisMatching.class);
   }
 
   public static void execute(Class<? extends Problem> problemToExecute) {
