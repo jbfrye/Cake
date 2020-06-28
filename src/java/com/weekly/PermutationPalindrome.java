@@ -2,21 +2,20 @@ package com.weekly;
 
 import static java.lang.System.out;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
 
-/** Solution to Interview Cake Weekly Problem #299: Permutation Palindrome */
+/** Solution to Interview Cake Weekly Problem #299: Permutation Palindrome. */
 public class PermutationPalindrome implements Problem {
-  private String input;
-
   public PermutationPalindrome() {}
 
   public void execute() {
-    readInput();
-    runSolution();
+    runSolution(readInput());
   }
 
   /** Problem solution. */
-  private void runSolution() {
+  private void runSolution(String input) {
     Set<Character> unpairedSet = new HashSet<>();
 
     for (char character : input.toCharArray()) {
@@ -36,10 +35,10 @@ public class PermutationPalindrome implements Problem {
   }
 
   /** Read in a string. */
-  private void readInput() {
+  private String readInput() {
     Scanner scanner = new Scanner(System.in);
 
     out.println("Enter a string:");
-    input = scanner.nextLine().toLowerCase();
+   return scanner.nextLine().toLowerCase();
   }
 }

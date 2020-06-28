@@ -4,7 +4,7 @@ import static java.lang.System.out;
 
 import java.util.Scanner;
 
-/** Solution to Interview Cake Weekly Problem #300: Parenthesis Matching */
+/** Solution to Interview Cake Weekly Problem #300: Parenthesis Matching. */
 public class ParenthesisMatching implements Problem {
   private String sentence;
   private int position;
