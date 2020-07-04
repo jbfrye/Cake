@@ -8,8 +8,6 @@ import java.util.Set;
 
 /** Solution to Interview Cake Weekly Problem #299: Permutation Palindrome. */
 public class PermutationPalindrome implements Problem {
-  public PermutationPalindrome() {}
-
   public void execute() {
     runSolution(readInput());
   }

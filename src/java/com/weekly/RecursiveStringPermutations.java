@@ -2,12 +2,15 @@ package com.weekly;
 
 import static java.lang.System.out;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
 
 /** Solution to the Interview Cake Weekly Problem #301: Recursive String Permutations. */
 public class RecursiveStringPermutations implements Problem{
-  public RecursiveStringPermutations() {}
-
   public void execute() {
     runSolution(readInput());
   }

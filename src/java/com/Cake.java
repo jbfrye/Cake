@@ -14,7 +14,10 @@ public class Cake {
     //execute(ParenthesisMatching.class);
 
     // #301: Recursive String Permutations
-    execute(RecursiveStringPermutations.class);
+    //execute(RecursiveStringPermutations.class);
+
+    // #302: Find Repeat, Space Edition
+    execute(FindRepeatSpaceEdition.class);
   }
 
   public static void execute(Class<? extends Problem> problemToExecute) {

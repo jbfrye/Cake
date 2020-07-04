@@ -9,8 +9,6 @@ public class ParenthesisMatching implements Problem {
   private String sentence;
   private int position;
 
-  public ParenthesisMatching() {}
-
   public void execute() {
     readAndValidateInput();
     runSolution();
