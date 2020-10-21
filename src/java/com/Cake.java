@@ -8,24 +8,15 @@ import java.lang.reflect.InvocationTargetException;
 public class Cake {
   public static void main(String[] args) {
     // #299: Permutation Palindrome
-    //execute(PermutationPalindrome.class);
+    //execute(Num299PermutationPalindrome.class);
 
     // #300: Parenthesis Matching
-    //execute(ParenthesisMatching.class);
+    //execute(Num300ParenthesisMatching.class);
 
     // #301: Recursive String Permutations
-    //execute(RecursiveStringPermutations.class);
+    //execute(Num301RecursiveStringPermutations.class);
 
     // #302: Find Repeat, Space Edition
-    execute(FindRepeatSpaceEdition.class);
-  }
-
-  public static void execute(Class<? extends Problem> problemToExecute) {
-    try {
-      problemToExecute.getDeclaredConstructor().newInstance().execute();
-    } catch (NoSuchMethodException | InstantiationException |
-            IllegalAccessException | InvocationTargetException ex) {
-      out.println("Error with executing " + problemToExecute + ": " + ex.getMessage());
-    }
+    //execute(Num302FindRepeatSpaceEdition.class);
   }
 }

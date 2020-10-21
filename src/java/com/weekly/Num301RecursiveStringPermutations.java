@@ -6,17 +6,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Scanner;
 import java.util.Set;
 
 /** Solution to the Interview Cake Weekly Problem #301: Recursive String Permutations. */
-public class RecursiveStringPermutations implements Problem{
-  public void execute() {
-    runSolution(readInput());
-  }
-
+public class Num301RecursiveStringPermutations {
   /** Problem solution. */
-  private void runSolution(String input) {
+  public static List<String> runSolution(String input) {
     Set<String> answers = everyPermutation(input);
     List<String> sortedAnswers = new ArrayList<>(answers);
     Collections.sort(sortedAnswers);
@@ -24,9 +19,10 @@ public class RecursiveStringPermutations implements Problem{
     for (String answer : sortedAnswers) {
       out.print(answer + " ");
     }
+    return sortedAnswers;
   }
 
-  private Set<String> everyPermutation(String input) {
+  private static Set<String> everyPermutation(String input) {
     if (input.length() <= 1) {
       return new HashSet<>(Collections.singletonList(input));
     }
@@ -47,13 +43,5 @@ public class RecursiveStringPermutations implements Problem{
     }
 
     return permutations;
-  }
-
-  /** Read in a string. */
-  private String readInput() {
-    Scanner scanner = new Scanner(System.in);
-
-    out.println("Enter a string:");
-    return scanner.nextLine();
   }
 }

@@ -3,20 +3,15 @@ package com.weekly;
 import static java.lang.System.out;
 
 import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
 
 /** Solution to Interview Cake Weekly Problem #299: Permutation Palindrome. */
-public class PermutationPalindrome implements Problem {
-  public void execute() {
-    runSolution(readInput());
-  }
-
+public class Num299PermutationPalindrome {
   /** Problem solution. */
-  private void runSolution(String input) {
+  public static boolean runSolution(String input) {
     Set<Character> unpairedSet = new HashSet<>();
 
-    for (char character : input.toCharArray()) {
+    for (char character : input.toLowerCase().toCharArray()) {
       if (!unpairedSet.contains(character)) {
         unpairedSet.add(character);
       } else {
@@ -27,16 +22,10 @@ public class PermutationPalindrome implements Problem {
     out.print("Is Palindrome: ");
     if (unpairedSet.size() <= 1) {
       out.print("True");
+      return true;
     } else {
       out.print("False");
+      return false;
     }
-  }
-
-  /** Read in a string. */
-  private String readInput() {
-    Scanner scanner = new Scanner(System.in);
-
-    out.println("Enter a string:");
-   return scanner.nextLine().toLowerCase();
   }
 }
